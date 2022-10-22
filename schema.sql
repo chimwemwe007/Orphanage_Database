@@ -7,9 +7,13 @@ CREATE TABLE orphan (
     last_name VARCHAR (200) NOT NULL,
     age int NOTNULL
     gender BOOLEAN NOT NULL NOT NULL,
+    child_referal VARCHAR(100) NOT NULL,
+    parent_history VARCHAR(200) NOT NULL,
     religion VARCHAR(100) NOT NULL,
     guardiaName VARCHAR(100) NOT NULL,
     guardian occupation VARCHAR (100) NOT NULL,
+    TYPE_OF_DISABILITY VARCHAR (100),
+    hospital_visit DATE NOTNULL,
     join date DATE NOTNULL,
     well wisher visits INT,
     PRIMARY KEY (id)
@@ -20,7 +24,10 @@ CREATE TABLE guardian (
     first_name VARCHAR(100) NOTNULL,
     middle_name VARCHAR(100) NULL,
     last_name VARCHAR (200) NOT NULL,
-    age int NOTNULL
+    education_status VARCHAR(100),
+    marital_status varchar (100),
+    
+    age int NOTNULL,
     gender BOOLEAN NOT NULL NOT NULL,
     religion VARCHAR(100) NOT NULL,
     guardiaName VARCHAR(100) NOT NULL,
